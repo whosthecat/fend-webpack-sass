@@ -12,6 +12,6 @@ console.log(checkForName);
 alert("I EXIST")
 
 export {
-    checkForName,
-    handleSubmit
+ checkForName,
+ handleSubmit
 }
