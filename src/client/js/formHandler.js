@@ -11,13 +11,9 @@ function handleSubmit(event) {
     Client.checkForName(formText)
 
     console.log("::: Form Submitted :::")
-    fetch("http://api.openweathermap.org/data/2.5/weather?zip=10001&appid=feb5077347ee53d4e8314a88815be83d&units=imperial")
-    .then(res => {
-        return res.json()
-    })
-    .then(function(data) {
-        document.getElementById('results').innerHTML = data.message
-    })
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
 }
 
 export { handleSubmit }
